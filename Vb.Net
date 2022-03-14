@@ -1,0 +1,48 @@
+Public Class EncabezadosDataGridViewPorCodigo
+
+    Private Sub EncabezadosDataGridViewPorCodigo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        'Variables
+        Dim Col_Text As DataGridViewTextBoxColumn
+        Dim Col_Check As DataGridViewCheckBoxColumn
+
+        'Agregar la columna CÓDIGO
+        Col_Text = New DataGridViewTextBoxColumn() With
+        {
+            .Name = "Codigo",
+            .HeaderText = "CÓDIGO",
+            .Width = 200
+        }
+        Me.Dgv_Lista.Columns.Add(Col_Text)
+
+        'Agregar la columna CÓDIGO
+        Col_Text = New DataGridViewTextBoxColumn() With
+        {
+            .Name = "Descripcion",
+            .HeaderText = "DESCRIPCIÓN",
+            .Width = 297
+        }
+        Me.Dgv_Lista.Columns.Add(Col_Text)
+
+        'Agregar la columna PRECIO U.
+        Col_Text = New DataGridViewTextBoxColumn() With
+        {
+            .Name = "PrecioU",
+            .HeaderText = "PRECIO U.",
+            .Width = 100
+        }
+        Me.Dgv_Lista.Columns.Add(Col_Text)
+
+        'Agregar la columna ACTIVO
+        Col_Check = New DataGridViewCheckBoxColumn() With
+        {
+            .Name = "ACTIVO",
+            .HeaderText = "ACTIVO",
+            .Width = 100
+        }
+        Me.Dgv_Lista.Columns.Add(Col_Check)
+
+
+    End Sub
+
+End Class
